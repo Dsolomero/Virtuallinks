@@ -2,12 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Virtuallinks Technologies | Add Product</title>
+	<title>Virtuallinks Technologies | Add Services</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
 
 </head>
 <body>
+	
 	<div class="container">
 		<?php 
 		   include('nav.php');
@@ -29,10 +30,10 @@
 			<div class="col-6">
   <form method="POST" action="">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product Name</label>
+    <label for="exampleInputEmail1" class="form-label">Service Name</label>
     <input type="text" class="form-control" name="product_name">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product Description</label>
+    <label for="exampleInputEmail1" class="form-label">Service Description</label>
     <input type="text" class="form-control" name="product_desc"> 
   </div>
 
@@ -85,7 +86,7 @@
 		    		//execute the command - sql query - Insert into db
 		    		if (mysqli_stmt_execute($stmt)) {
 		    			# code...
-		    			echo "Product added successfully to the database";
+		    			echo "Service added successfully to the database";
 		    			//redirect go to my products
 		    			header("location:showproducts.php");
 		    		}else{

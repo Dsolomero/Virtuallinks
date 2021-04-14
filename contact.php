@@ -9,6 +9,11 @@
 
 </head>
 <body>
+	<div class="alert alert-primary">
+
+      <center><h1>Virtuallinks Technologies</h1><i>"We make <b>IT</b> happen virtually!!"</i></center>
+    </div></center>
+    </div>
 
 	<?php include('nav.php')?>
 	<!--  Start of Nav  -->    	
@@ -17,10 +22,20 @@
 
 <h1 style="font-size: 28px;color: blue">Contact Us</h1>
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-5">
-			<form>
+
+		<!--<div class="col-5"> 		<div class="col-sm-4 offset-md-1 py-4">  
+          <h4 class="text-black">Contact</h4> -->
+
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-black">Follow us on Twitter: @virtuallinks</a></li>
+            <li><a href="#" class="text-black">Like us on Facebook: Virtuallinks Technologies</a></li>
+            <li><a href="#" class="text-black">Email Us on: virtuallinks@gmail.com</a></li>
+            <li><a href="#" class="text-black">Call Us: +254712695845</a></li>
+          </ul>
+        </div>
+      </div>
+
+		<!--	<form>
 				<div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -31,10 +46,8 @@
 </div>
 <button type="submit" class="btn btn-success">Submit</button>
 			</form>
-			
-		</div>
+			-->
 		
-	</div>
 	
 </div>
 

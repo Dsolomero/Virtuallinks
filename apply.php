@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Apply</title>
+	<title>Order</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
 </head>
@@ -41,12 +41,12 @@
 			<div class="-6">
 				<form method="POST" action="">
                    <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product Name</label>
+    <label for="exampleInputEmail1" class="form-label">Service Name</label>
     <input type="text" class="form-control" name="product_name" value="<?php echo ($productRecord['name']);?>"> 
   </div>
 
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product Description</label>
+    <label for="exampleInputEmail1" class="form-label">Service Description</label>
     <input type="text" class="form-control" name="product_desc" value="<?php echo ($productRecord['description']);?>"> 
   </div>
   <input type="hidden" name="productId" value=<?php echo ($productRecord['id']);?>> 
@@ -55,13 +55,13 @@
     <label for="exampleInputEmail1" class="form-label">Cost</label>
     <input type="number" class="form-control" name="product_cost" value=<?php echo ($productRecord['cost']);?>> 
   </div>
-  <button name="apply" type="submit" class="btn btn-primary">APPLY</button>
+  <button name="order" type="submit" class="btn btn-primary">ORDER</button>
                 </form>
 
 
      <?php
 
-     if (isset($_POST['apply'])) {
+     if (isset($_POST['order'])) {
      	# code...
      	//capture the values from the form
      	$productName = $_POST['product_name'];

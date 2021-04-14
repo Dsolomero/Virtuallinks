@@ -2,14 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Virtuallinks Technologies | Edit Products</title>
+	<title>Virtuallinks Technologies | Edit Services</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
 
 </head>
 <body>
+	<div class="alert alert-primary">
+
+      <center><h1>Virtuallinks Technologies</h1></center>
+    </div>
 	<div class="container">
-		<h1>Edit Products</h1>
+		<h1>Edit Services</h1>
 
 		<?php include('nav.php');
 		if ($_SESSION['role']=='customer') {
@@ -52,12 +56,12 @@
 			<div class="col-6">
 				<form method="POST" action="">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product Name</label>
+    <label for="exampleInputEmail1" class="form-label">Service Name</label>
     <input type="text" class="form-control" name="product_name" value=<?php echo ($productRecord['name']);?>> 
   </div>
 
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product Description</label>
+    <label for="exampleInputEmail1" class="form-label">Service Description</label>
     <input type="text" class="form-control" name="product_desc" value=<?php echo ($productRecord['description']);?>> 
   </div>
   <input type="hidden" name="productId" value=<?php echo ($productRecord['id']);?>> 
@@ -111,7 +115,7 @@
 		    		//execute the command - sql query - Insert into db
 		    		if (mysqli_stmt_execute($stmt)) {
 		    			# code...
-		    			echo "Product updated successfully to the database";
+		    			echo "Service updated successfully to the database";
 		    			//redirect go to my products
 		    			header("location:showproducts.php");
 		    		}else{

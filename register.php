@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="alert alert-primary">
 
-			<center><h1>Welcome to Virtuallinks Technologies</h1>Register to Continue</center>
+			<center><h1>Virtuallinks Technologies</h1>Register to Continue</center>
 
 		<div>
 		

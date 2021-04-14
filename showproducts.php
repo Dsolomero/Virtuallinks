@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Virtuallinks Technologies | Products</title>
+	<title>Virtuallinks Technologies | Services</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
-
 	<div class="container-fluid">
 		<?php 
 		     include('nav.php');
@@ -17,16 +16,16 @@
 		     }
 		?>		      
 
-		<h3 style="color: #2199D5; font-family: monospace;">Products</h3>
+		<h3 style="color: #2199D5; font-family: monospace;">Services We Offer</h3>
 
-	<div class="col-6">
+	<div class="col-8">
 
 	<table class="table">
 
 		<tr>
 	
-			<th>Product Name</th>		
-			<th>Product Description</th>
+			<th>Service Name</th>		
+			<th>Service Description</th>
 			<th>Cost</th>
 				
 		</tr>
@@ -76,7 +75,7 @@
 	     			echo "<td>".$record['cost']."</td>";
 	     			echo "<td>
 
-	     			   <a href='editproduct.php?id=".$record['id']."'class='btn btn-primary'>Edit Product</a>
+	     			   <a href='editproduct.php?id=".$record['id']."'class='btn btn-primary'>Edit Service</a>
 
 	     			   <form method='POST' action=''>
 	     			   <input type='hidden' value='".$record['id']."'name='productId'>
@@ -114,7 +113,7 @@
 			$result = mysqli_query($conn,$sql);
 			if ($result) {
 				# code...
-				echo '<div class="alert alert-success" role="alert">Product Deleted Successfully.
+				echo '<div class="alert alert-success" role="alert">Service Deleted Successfully.
                       </div>';
 
 			}else{

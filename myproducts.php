@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Applications</title>
+	<title>My Orders</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
 </head>
 <body>
+	<div class="alert alert-primary">
+
+      <center><h1>Virtuallinks Technologies</h1><i>"We make <b>IT</b> happen virtually!!"</i></center>
+    </div>
 
 	<?php
 	   include('nav.php');
@@ -14,7 +18,7 @@
 	<div class="container">
 
 		<div class="row">
-			<h3 style="c olor: #2199D5; font-family: monospace;">My Applications</h3>
+			<h3 style="c olor: #2199D5; font-family: monospace;">My Orders</h3>
 			<div class="col-3">
 				<img src="https://c8.alamy.com/comp/R2A5TK/computer-service-icons-set-in-isometric-3d-style-isolated-on-white-R2A5TK.jpg" class="img-fluid">
 				

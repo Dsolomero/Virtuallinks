@@ -6,6 +6,11 @@
 
 
 </head>
+<div class="alert alert-primary">
+
+      <center><h1>Welcome to Virtuallinks Technologies</h1><i>"We make <b>IT</b> happen virtually!!"</i></center>
+    </div>
+
 <body bgcolor="#2D6851">
   <?php include('nav.php')?>
   <div class="container">
@@ -49,7 +54,7 @@
                    <p class="card-text" rows="3">'.$record['description'].'</p>
                    <h4 style="color:red;">Ksh'.$record['cost'].'</h4>
 
-                   <a href="apply.php?id='.$record['id'].'" class="btn btn-primary">Apply Now</a>
+                   <a href="apply.php?id='.$record['id'].'" class="btn btn-primary">Order Now</a>
                
                    </div>
                    </div>
@@ -61,7 +66,7 @@
 
           }else{
             echo "<h4>No Products available</h4>";
-            echo "<a class='btn btn-primary' href='addproduct.php'>Add Products";
+            echo "<a class='btn btn-primary' href='addproduct.php'>Add Services";
           }
         }else{
           echo "Something went wrong!!";

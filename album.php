@@ -34,6 +34,10 @@
     
   </head>
   <body>
+    <div class="alert alert-primary">
+
+      <center><h1>Virtuallinks Technologies</h1><i>"We make <b>IT</b> happen virtually!!"</i></center>
+    </div>
 
     <?php include('nav.php')?>
     
@@ -44,8 +48,7 @@
 
 <main bgcolor="#2D6851">
 
-      <center><h1>Virtuallinks Technologies Album</h1>
-    </center>
+      <center><h1>Virtuallinks Technologies Album</h1></center>
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
